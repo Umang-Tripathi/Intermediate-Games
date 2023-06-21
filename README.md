@@ -1,6 +1,6 @@
 # snake-game
 
-This is my attemp to make the OG snake game using javascript.
+This is my attempt to make the OG snake game using javascript, HTML and CSS.
 
-use function startGame() to start the game.
+Use the function startGame() to start the game.
 
