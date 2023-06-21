@@ -1,0 +1,72 @@
+#gameArea{
+    height: 500px;
+    width: 500px;
+    background-color: rgb(0, 69, 1);
+    position: absolute;
+    text-align: center;
+    border : 1px solid;
+}
+#start{
+    
+    border-radius: 10px;
+    height:20px;
+    width:100px;
+    color: black;
+    background-color: aquamarine;
+
+}
+#reset{
+    border-radius: 10px;
+    height:20px;
+    width:100px;
+    color: black;
+    background-color: aquamarine;
+
+}
+#score{
+    color:azure;
+    font-size: x-large;
+}
+#game{
+    position: inherit;
+    background-color: rgb(119, 255, 70);
+    top:70px;
+    left:50px;
+    height:400px;
+    width: 400px;
+    border : 10px solid;
+    border-color: brown;
+}
+#snake{
+    position: inherit;
+    top:200px;
+    left:200px;
+    height:10px;
+    background-color: red;
+    width: 10px;
+    border : 1px solid;
+
+}
+#food{
+    position: inherit;
+    top:150px;
+    left:150px;
+    height:10px;
+    background-color: rgb(0, 0, 250);
+    width: 10px;
+    border : 1px solid;
+    border-radius: 6px;
+
+}
+#Game_Over{
+    font-size: 40px;
+    font-style: bold;
+    color:red;
+    font-family:fantasy;
+
+}
+#score_card{
+    font-size: 40px;
+    font-style: bold;
+
+}
