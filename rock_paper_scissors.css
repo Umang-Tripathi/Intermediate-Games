@@ -1,0 +1,56 @@
+.playArea{
+    text-align: center;
+    height: 500px;
+    width: 1000px;
+    background-color: grey;
+    border-radius: 50px;
+    border: 10px solid;
+
+}
+#player{
+    color: blue;
+
+    font-family: "Chalkboard";
+    font-size: 80px;
+
+}
+#computer{
+    color: red;
+
+    font-family: "Chalkboard";
+    font-size: 80px;
+
+}
+#result{
+    font-family: "Chalkboard";
+    font-size: 80px;
+
+}
+#rock{
+    line-height: 80px;
+    width: 300px;
+
+    color: black;
+    
+    font-family: "Chalkboard";
+    font-size: 40px;
+
+}
+#paper{
+    line-height: 80px;
+    width: 300px;
+    color: black;
+
+    font-family: "Chalkboard";
+    font-size: 40px;
+
+}
+#scissors{
+    line-height: 80px;
+    width: 300px;
+    color: black;
+
+    font-family: "Chalkboard";
+    font-size: 40px;
+
+}

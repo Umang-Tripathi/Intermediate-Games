@@ -1,0 +1,22 @@
+.timerBtn{
+    
+    width : 80 px;
+    height :30px;
+    border :3px solid;
+    border-radius: 12px;
+    background-color: black;
+    color: white;
+    cursor:pointer;
+    font-family:'Chalkboard';
+}
+#timeDisplay{
+    font-size: 75px;
+    font-family: Chalkboard,monospace;
+    color:rgb(52, 250, 118)
+}
+#timeContainer{
+    background-color: black;
+    text-align: center;
+    border :3px solid;
+    border-radius: 25px
+}

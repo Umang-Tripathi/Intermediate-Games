@@ -16,6 +16,9 @@ var score_value=0;
 var x=200;
 var y=200;
 let timerID=null;
+var r=250;
+var b=0;
+var g=0;
 start.addEventListener("click",startGame);
 reset.addEventListener("click",resetGame);
 window.addEventListener("keydown",(value)=>{
@@ -70,7 +73,27 @@ function extend_snake_body(x,y){
     const snakebody = document.createElement('div');
     snakebody.style.height=10+"px";
     snakebody.style.width=10+"px";
-    snakebody.style.backgroundColor="red";
+    if(length_of_snake%60<10){
+        g+=25;
+    }
+    else if(length_of_snake%60<20){
+        r-=25;
+    }
+    else if(length_of_snake%60<30){
+        b+=25;
+    }
+    else if(length_of_snake%60<40){
+        g-=25;
+    }
+    else if(length_of_snake%60<50){
+        r+=25;
+    }
+    else{
+        b-=25;
+    }
+    
+    snakebody.style.backgroundColor="rgb("+r+","+g+","+b+")";
+    console.log(snakebody.style.backgroundColor);
 
 
     snakebody.id = 'snake'+length_of_snake;
@@ -174,7 +197,9 @@ function move(){
         food_y=Math.floor(Math.random()*40)*10;
         food.style.top=food_x+"px";
         food.style.left=food_y+"px";
+        
         extend_snake_body(x,y);
+        food.style.backgroundColor="rgb("+r+","+g+","+b+",)";
        
 
         console.log(l);

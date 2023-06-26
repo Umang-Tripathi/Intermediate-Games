@@ -35,7 +35,7 @@
     height:400px;
     width: 400px;
     border : 10px solid;
-    border-color: brown;
+    border-color: black;
 }
 #snake{
     position: inherit;

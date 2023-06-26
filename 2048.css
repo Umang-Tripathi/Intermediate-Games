@@ -1,0 +1,227 @@
+.game{
+    position: absolute;
+    border:1px solid;
+    height: 512px;
+    width: 512px;
+    padding: 0%;
+
+}
+#_11{
+    line-height: 128px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    position:relative;
+    font-size: xx-large;
+    
+    height:128px;
+    width:128px;
+    background-color: aquamarine;
+}
+#_12{
+    position:relative;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 128px;
+    font-size: xx-large;
+    height:128px;
+    width:128px;
+    background-color: aquamarine;
+}
+#_13{
+    position:relative;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 128px;
+    font-size: xx-large;
+    position:relative;
+    height:128px;
+    width:128px;
+    background-color: aquamarine;
+}
+#_14{
+    position:relative;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 128px;
+    font-size: xx-large;
+    position:relative;
+    height:128px;
+    width:128px;
+    background-color: aquamarine;
+}
+#_21{
+    position:relative;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 128px;
+    font-size: xx-large;
+    position:relative;
+    top:-512px;
+    left:128px;
+    height:128px;
+    width:128px;
+    background-color: aquamarine;
+}
+#_22{
+    position:relative;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 128px;
+    font-size: xx-large;
+    position:relative;
+    top:-512px;
+    left:128px;
+    height:128px;
+    width:128px;
+    background-color: aquamarine;
+}
+#_23{
+    position:relative;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 128px;
+    font-size: xx-large;
+    position:relative;
+    position:relative;
+    top:-512px;
+    left:128px;
+    height:128px;
+    width:128px;
+    background-color: aquamarine;
+}
+#_24{
+    position:relative;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 128px;
+    font-size: xx-large;
+    position:relative;
+    position:relative;
+    top:-512px;
+    left:128px;
+    height:128px;
+    width:128px;
+    background-color: aquamarine;
+}
+#_31{
+    position:relative;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 128px;
+    font-size: xx-large;
+    position:relative;
+    position:relative;
+    left:256px;
+    top:-1024px;
+    height:128px;
+    width:128px;
+    background-color: aquamarine;
+}
+#_32{
+    position:relative;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 128px;
+    font-size: xx-large;
+    position:relative;
+    position:relative;
+    left:256px;
+    top:-1024px;
+    height:128px;
+    width:128px;
+    background-color: aquamarine;
+}
+#_33{
+    position:relative;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 128px;
+    font-size: xx-large;
+    position:relative;
+    position:relative;
+    left:256px;
+    top:-1024px;
+    height:128px;
+    width:128px;
+    background-color: aquamarine;
+}
+#_34{
+    position:relative;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 128px;
+    font-size: xx-large;
+    position:relative;
+    position:relative;
+    left:256px;
+    top:-1024px;
+    height:128px;
+    width:128px;
+    background-color: aquamarine;
+}
+#_41{
+    position:relative;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 128px;
+    font-size: xx-large;
+    position:relative;
+    position:relative;
+    left:384px;
+    top:-1536px;
+    height:128px;
+    width:128px;
+    background-color: aquamarine;
+}
+#_42{
+    position:relative;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 128px;
+    font-size: xx-large;
+    position:relative;
+    position:relative;
+    top:-1536px;
+    left:384px;
+    height:128px;
+    width:128px;
+    background-color: aquamarine;
+}
+#_43{
+    position:relative;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 128px;
+    font-size: xx-large;
+    position:relative;
+    position:relative;
+    top:-1536px;
+    left:384px;
+    height:128px;
+    width:128px;
+    background-color: aquamarine;
+}
+#_44{
+    
+    position:relative;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 128px;
+    font-size: xx-large;
+    position:relative;
+    position:relative;
+    top:-1536px;
+    left:384px;
+    height:128px;
+    width:128px;
+    background-color: aquamarine;
+}
+#start{
+    height: 50px;
+    width: 200px;
+    position: relative;
+    font-size: xx-large;
+    top:560px;
+    left:150px;
+}
