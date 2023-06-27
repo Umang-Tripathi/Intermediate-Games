@@ -8,97 +8,42 @@ const reset2=document.getElementById('reset2');
 const piston1=document.getElementById('cannon1');
 const piston2=document.getElementById('cannon2');
 const new_ghost_child=document.getElementById('new_ghost_child');
-const plane1=document.getElementById('plane1')
-const plane=document.getElementById('pLaNe')
-var planeTimerId1=null;
-plane.addEventListener("click",()=>{
-    planeTimerId1=setInterval(movePlaneR,5);
 
+const constructwall=document.getElementById('constructWall');
+const newWall=document.getElementById('newWall');
+
+var newWall_list=[]
+var newWall_list_dim=[];
+
+constructwall.addEventListener('click',()=>{
+    
+
+    document.body.addEventListener('click',event=>{
+        let xx = event.clientX;
+        let yy = event.clientY;
+        if(xx>100 && xx<1350 && yy>100 && yy<480){
+            let tempwall= document.createElement('div');
+            tempwall.style.height=20+"px";
+            tempwall.style.width=20+"px";
+            tempwall.id = 'tempwall'+xx+" "+yy;
+            tempwall.style.position="absolute";
+            tempwall.style.top=(yy-10)+"px";
+            tempwall.style.left=(xx-10)+"px";
+            tempwall.style.border=1+"px solid";
+            tempwall.style.backgroundColor='brown';
+            
+            newWall_list.push('tempwall'+xx+" "+yy)
+            let tempwalldim=[xx-10,xx+10,yy-10,yy+10];
+            newWall_list_dim.push(tempwalldim);
+            newWall.appendChild(tempwall);
+        }
+        
+
+    })
 })
 
 
 
-var x_plane1=50;
-var y_plane1=200;
-
-
-function movePlaneR(){
-    plane1.style.left=x_plane1+"px";
-    x_plane1+=1;
-    if(x_plane1>1450){
-        plane1.style.rotate="180deg";
-        plane1.style.top=Math.floor(100+Math.random()*200)+"px";
-        clearInterval(planeTimerId1);
-        planeTimerId1=setInterval(movePlaneL,5);
-
-
-    }
-    if((x>=x_plane1+10 && x<=(x_plane1+60)) && (y>=y_plane1+10 && y<=(y_plane1+30))){
-        console.log("crash")
-        clearInterval(planeTimerId1);
-        plane1.style.rotate="0deg";
-        crash();
-    }
-    if((x2>=x_plane1+10 && x2<=(x_plane1+60)) && (y2>=y_plane1+10 && y2<=(y_plane1+30))){
-        console.log("crash")
-        clearInterval(planeTimerId1);
-        plane1.style.rotate="0deg"
-        crash();
-    }
-
-}
-function movePlaneL(){
-    plane1.style.left=x_plane1+"px";
-    
-    x_plane1-=1;
-    if(x_plane1<0){
-        plane1.style.rotate="0deg";
-        plane1.style.top=Math.floor(100+Math.random()*200)+"px";
-        clearInterval(planeTimerId1);
-        planeTimerId1=setInterval(movePlaneR,5);
-
-
-    }
-    if((x>=x_plane1+10 && x<=(x_plane1+60)) && (y>=y_plane1+10 && y<=(y_plane1+30))){
-        console.log("crash")
-        clearInterval(planeTimerId1);
-        plane1.style.rotate="0deg";
-        crash();
-    }
-    if((x2>=x_plane1+10 && x2<=(x_plane1+60)) && (y2>=y_plane1+10 && y2<=(y_plane1+30))){
-        console.log("crash")
-        clearInterval(planeTimerId1);
-        plane1.style.rotate="0deg"
-        crash();
-    }
-
-}
-var timerdrop=null;
-var ro=0;
-function crash(){
-    timerdrop=setInterval(rotate_and_drop,5);
-    //explode();
-
-}
-function rotate_and_drop(){
-    if(y_plane1>480){
-        clearInterval(timerdrop);
-        x_plane1=25;
-        y_plane1=200;
-        plane1.style.left=25+"px";
-        
-        plane1.style.top=200+"px";
-        plane1.style.rotate=0+"deg";
-        ro=0;
-
-
-    }
-    plane1.style.top=y_plane1+"px";
-    plane1.style.rotate=ro+"deg";
-    ro+=10;
-    y_plane1+=1;
-
-}
 
 var number_of_allowed_bounces=10;;
 var gameStarted=true;
@@ -177,8 +122,18 @@ start2.addEventListener("click",()=>{
         rotation2timeID=setInterval(rotate2canonpiston, 25);
     }
 })
-reset.addEventListener("click",resetGame)
-reset2.addEventListener("click",resetGame2)
+reset.addEventListener("click",()=>{
+    resetGame();
+    resetGame2();
+    for(let i=0;i<newWall_list.length;i++){
+        let pons=i
+        let newWallID=newWall_list[pons]
+        let element = document.getElementById(newWallID);
+        element.remove();
+    }
+    newWall_list_dim=[]
+})
+
 function rotate1canonpiston(){
     if(rotation1>temprotation1){
         temprotation1+=1;
@@ -292,6 +247,25 @@ function move_ball(){
         y_speed=-y_speed;
 
     }
+    for(let i=0;i<newWall_list_dim.length;i++){
+        if(newWall_list_dim[i][0]<x && x<newWall_list_dim[i][1] && newWall_list_dim[i][2]<y && newWall_list_dim[i][3]>y){
+            console.log(newWall_list);
+            resetGame();
+            let newWallID=newWall_list[i]
+            let element = document.getElementById(newWallID);
+            let posn=i
+            element.remove();
+            newWall_list.splice(posn,posn);
+            newWall_list_dim.splice(posn,posn);
+            console.log(newWall_list);
+            
+            
+            break;
+
+
+
+        }
+    }
     path_trace(x,y);
 
     
@@ -330,6 +304,16 @@ function move_ball2(){
         y2=100;
         y_speed2=-y_speed2;
 
+    }
+    for(let i=0;i<newWall_list_dim.length;i++){
+        if(newWall_list_dim[i][0]<x2 && x2<newWall_list_dim[i][1] && newWall_list_dim[i][2]<y2 && newWall_list_dim[i][3]>y2){
+            resetGame2();
+            
+            break;
+
+
+
+        }
     }
     path_trace2(x2,y2);
 
