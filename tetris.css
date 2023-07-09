@@ -1,0 +1,93 @@
+#gameArea{
+    position:absolute;
+    border:5px solid;
+    border-color: blue;
+    left:600px;
+    width:500px;
+    height:700px;
+
+}
+
+#nextShape{
+    position:absolute;
+    border:1px solid;
+    width:150px;
+    height:150px;
+    left:400px;
+
+}
+#_11{
+    position: absolute;
+    height:50px;
+    width:50px;
+    
+
+}
+#_21{
+    position: absolute;
+    top:50px;
+    height:50px;
+    width:50px;
+   
+    
+}
+#_31{
+    position: absolute;
+    top:100px;
+    height:50px;
+    width:50px;
+    
+    
+}
+#_12{
+    position: absolute;
+    left:50px;
+    height:50px;
+    width:50px;
+     
+
+}
+#_22{
+    position: absolute;
+    top:50px;
+    left:50px;
+    height:50px;
+    width:50px;
+     
+    
+}
+#_32{
+    position: absolute;
+    top:100px;
+    left:50px;
+    height:50px;
+    width:50px;
+     
+    
+}
+#_13{
+    position: absolute;
+    left:100px;
+    height:50px;
+    width:50px;
+   
+
+}
+#_23{
+    position: absolute;
+    top:50px;
+    left:100px;
+    height:50px;
+    width:50px;
+   
+    
+}
+#_33{
+    position: absolute;
+    top:100px;
+    left:100px;
+    height:50px;
+    width:50px;
+   
+    
+}
