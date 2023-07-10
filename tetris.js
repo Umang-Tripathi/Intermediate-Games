@@ -24,6 +24,20 @@ var gg=[];
 var nextgg=[];
 
 function preload(){
+    gg=[]
+    nextgg=[];
+    mat=[];
+    gamematID=[];
+    newShapeID=[];
+    shapeID=[];
+    colorname='white';
+    colornumber=0;
+    speed=500;
+    shapesize=9;
+    timerID=null;
+    topDistance=-150;
+    leftDistance=200;
+
     for(let i=0;i<3;i++){
         let tempy=[];
         let temp=[];
@@ -69,7 +83,7 @@ function preload(){
     
     newElement.id=namewer;
     gameArea.appendChild(newElement);
-    let shape=document.getElementById("shape");
+    const shape=document.getElementById("shape");
     for(let i=0;i<3;i++){
         let tempName=[]
         for(let j=0;j<3;j++){
@@ -104,7 +118,7 @@ function preload(){
 
 }
 preload();
-const shape=document.getElementById("shape");
+
 start.addEventListener("click",()=>{
     if(gameStarted){
         for(let i=0;i<3;i++){
@@ -176,9 +190,30 @@ start.addEventListener("click",()=>{
     }
 })
 reset.addEventListener("click",()=>{
+    
+    
+    
+    for(let i=0;i<14;i++){
+        for(let j=0;j<10;j++){
+            let name="("+i+""+j+")";
+            document.getElementById(name).remove();
+        }
+    }
+    for(let i=0;i<3;i++){
+        let tempName=[]
+        for(let j=0;j<3;j++){
+            let name="("+i+","+j+")";
+            document.getElementById(name).remove();
+        } 
+    }
+    document.getElementById('shape').remove();
     clearInterval(timerID);
     gameStarted=true;
+    preload();
+    
+
 })
+
 function again(){
     
     for(let i=0;i<3;i++){
