@@ -1,0 +1,90 @@
+#fallingpanel{
+    position:absolute;
+    top:50px;
+    left:200px;
+    height:550px;
+    width:1050px;
+    border:1px solid;
+    border-color: grey;
+}
+#piano{
+    position :absolute;
+    top:600px;
+    left:200px;
+    height:100px;
+    width:1050px;
+
+    border :1px solid;
+}
+#c{
+    position: absolute;
+    
+    left:0px;
+    
+    height:100px;
+    width:148px;
+    border:1px solid;
+}
+#d{
+    position: absolute;
+    
+    left:150px;
+    
+    height:100px;
+    width:148px;
+    border:1px solid;
+}
+#e{
+    position: absolute;
+    
+    left:300px;
+    
+    height:100px;
+    width:148px;
+    border:1px solid;
+}
+#f{
+    position: absolute;
+    
+    left:450px;
+    
+    height:100px;
+    width:148px;
+    border:1px solid;
+}
+#g{
+    position: absolute;
+    
+    left:600px;
+    
+    height:100px;
+    width:148px;
+    border:1px solid;
+}
+#a{
+    position: absolute;
+    
+    left:750px;
+    
+    height:100px;
+    width:148px;
+    border:1px solid;
+    
+}
+#b{
+    position: absolute;
+    
+    left:900px;
+    
+    height:100px;
+    width:148px;
+    border:1px solid;
+}
+#hide{
+    position:absolute;
+    left:200px;
+    top:703px;
+    height:150px;
+    width:1055px;
+    background-color: white;
+}
