@@ -18,5 +18,9 @@ https://umang-tripathi.github.io/beginner-Games/snake.html
 
 https://umang-tripathi.github.io/beginner-Games/stopwatch.html
 
+
 https://umang-tripathi.github.io/beginner-Games/tetris.html
+
+
+https://umang-tripathi.github.io/beginner-Games/piano.html
 
