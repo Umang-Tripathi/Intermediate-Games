@@ -1,0 +1,46 @@
+*{
+    margin:0px;
+}
+body{
+    background:rgb(32, 32, 32);
+    overflow:hidden;
+}
+.controls-outer{
+    height: 6vh;
+    width: 100%;
+    background: rgb(56, 56, 56);
+
+}
+.outer-container{
+    position: relative;
+    width:100vw;
+    height:94vh;
+    display: flex;
+}
+.slidebar{
+    position: absolute;
+    height:2%;
+    background: rgb(127, 127, 127);
+    border-radius:20px;
+    top: 97%;
+    left :0px;
+}
+
+.blocks-container{
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.blocks-row{
+    display: flex;
+    width:100%;
+    height: 5%;
+    margin-top:1px;
+}
+.block{
+    margin-left: 1px;
+    height: 100%;
+    border-radius:5px ;
+}
