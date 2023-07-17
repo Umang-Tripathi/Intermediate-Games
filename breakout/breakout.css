@@ -1,0 +1,73 @@
+*{
+    margin:0px;
+}
+body{
+    background:rgb(32, 32, 32);
+    overflow:hidden;
+}
+.controls-outer{
+    height: 6vh;
+    width: 100%;
+    background: rgb(56, 56, 56);
+    display: flex;
+    color: rgb(208, 208, 208);
+    font-size: 24px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+.margin-small{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.game-name{
+    margin: auto;
+}
+.outer-container{
+    position: relative;
+    width:100vw;
+    height:94vh;
+    display: flex;
+}
+.slidebar{
+    position: absolute;
+    height:2%;
+    background: rgb(127, 127, 127);
+    border-radius:20px;
+    top: 97%;
+    left :0px;
+}
+
+.ball-container{
+    height:97%;
+    width:100%;
+    position: absolute;
+}
+.ball{
+   width:1%;
+   aspect-ratio: 1/1;
+   border-radius: 100%;
+   background: rgb(127, 127, 127); 
+   position: absolute;
+}
+
+.blocks-container{
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.blocks-row{
+    display: flex;
+    width:100%;
+    height: 5%;
+    margin-top:1px;
+    flex-shrink: 0;
+}
+.block{
+    margin-left: 1px;
+    height: 100%;
+    border-radius:5px ;
+}
