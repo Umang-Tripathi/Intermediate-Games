@@ -31,4 +31,5 @@ https://umang-tripathi.github.io/beginner-Games/chad_cat
 https://umang-tripathi.github.io/beginner-Games/breakout
 
 
-https://umang-tripathi.github.io/beginner-Games/maze
+https://umang-tripathi.github.io/beginner-Games/maze/maze.html
+
