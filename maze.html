@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="maze.css">
+
+</head>
+<body style="background-color:black">
+    
+    <div id="maze_area"></div>
+    <div id="hero"></div>
+    <div id="monsters"></div>
+    <div id="instructions">
+        <div id="textprompt">
+            <div id="heading">
+                <label>Instructions:<br></label><br>
+            </div>
+            <br>
+            <ul>
+                <li>use WASD to move</li>
+                <li>purple blobs cant pass<br> through grey walls but you can</li>
+                <li>eat golden coins</li>
+                <li>dont let blobs touch you</li>
+
+
+            </ul>
+            <button id="start">START</button>
+            <button id="reset">RESTART</button>
+
+        </div>
+    </div>
+    <script src="maze.js"></script>
+</body>
+</html>
