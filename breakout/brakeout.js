@@ -1,3 +1,13 @@
+//setting body height;
+document.body.style.height=window.innerHeight+'px';
+
+//loading audio
+const hit1=new Audio('assists/music/hit1.mp3'); //sound of hitting walls
+const hit2=new Audio('assists/music/hit2.mp3'); //siund of hitting slidebar
+//sound of hitting blocks is at the condition check of hitting
+//this is done to make multiple sounds simultaniously when many blocks are hit
+// in a short interval of time
+
 const outer_container=document.querySelector('.outer-container');
 const slidebar=document.querySelector('.slidebar');
 const SLIDEBAR_WIDTH_RELTIVE=18;//in vw
@@ -9,6 +19,7 @@ outer_container.addEventListener('mousemove',(event)=>{
     slidebarCenterPosition=event.clientX;
     slidebar.style.left=slidebarCenterPosition-SLIDEBAR_WIDTH/2+'px';
 });
+
 
 outer_container.addEventListener('click',(event)=>{
     if(stickBallToBar){stickBallToBar=false;document.querySelector('.outer-container').style.cursor='none';}
@@ -99,8 +110,8 @@ function updateBallPosition(){
         if(balltop<0) {
             balltop=0;
         }
-        if(balltop+ball.clientHeight>ballContainerHeight){
-            balltop=ballContainerHeight-ball.clientHeight;
+        if(balltop>ballContainerHeight+10){
+            endgame();
         } 
     }
     ball.style.top=balltop+'px';
@@ -116,18 +127,32 @@ function updateBallVelcoityAndCollission(){
     if(ballLeft<=0 && ballVelocityright<0){
         ballLeft=0;
         ballVelocityright=-ballVelocityright +Math.random()*(2*velcocityVariationRight)-velcocityVariationRight;
+        if(!stickBallToBar){
+            hit1.play();
+        }
     }
     if(balltop<=0 && ballVelocityBottom<0){
         balltop=0;
         ballVelocityBottom=-ballVelocityBottom +Math.random()*(2*velcocityVariationBottom)-velcocityVariationBottom;
+        hit1.play();
     }
     if(ballLeft>=ballContainerWidth-ball.clientWidth && ballVelocityright>0){
         ballVelocityright=-ballVelocityright +Math.random()*(2*velcocityVariationRight)-velcocityVariationRight;
+        if(!stickBallToBar){
+            hit1.play();
+        }
     }
     if(balltop>=ballContainerHeight-ball.clientHeight && ballVelocityBottom>0){
-        ballVelocityBottom=-ballVelocityBottom +Math.random()*(2*velcocityVariationBottom)-velcocityVariationBottom;
         if(Math.abs(ballLeft+ball.clientWidth/2-slidebarCenterPosition)-ball.clientWidth/2-10>SLIDEBAR_WIDTH/2){
-            endgame();
+            if(balltop>ballContainerHeight+10){
+                endgame();
+            }
+        }
+        else{
+            ballVelocityBottom=-ballVelocityBottom +Math.random()*(2*velcocityVariationBottom)-velcocityVariationBottom;
+            if(!stickBallToBar){
+                hit2.play();
+            }
         }
     }
     //collission detection
@@ -146,6 +171,7 @@ function updateBallVelcoityAndCollission(){
            ActiveBlocksCountInRow[ballRowNumber]--;
            score+=10;
            document.querySelector('.score-value').innerHTML=score+'';
+           (new Audio('assists/music/hit3.wav')).play();
         }
     }
    } 
@@ -187,12 +213,16 @@ function checkGameEnd(){
       endgame();
     }
 }
+var isendgame=false;
 function endgame(){
-    clearInterval(gameUpdateLoop)
-    clearInterval(speedIncreaseLoop)
-    clearInterval(addBlockRows)
-    document.querySelector('.outer-container').style.cursor='auto';
-    setTimeout(askToRestart,100);
+    if(!isendgame){
+        clearInterval(gameUpdateLoop)
+        clearInterval(speedIncreaseLoop)
+        clearInterval(addBlockRows)
+        document.querySelector('.outer-container').style.cursor='auto';
+        setTimeout(askToRestart,100);
+    }
+    isendgame=true;
 }
 function askToRestart(){
     if(confirm("You scored "+score+"\nPlay Again?")){

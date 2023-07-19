@@ -4,9 +4,10 @@
 body{
     background:rgb(32, 32, 32);
     overflow:hidden;
+    height: 100vh;
 }
 .controls-outer{
-    height: 6vh;
+    height: 6%;
     width: 100%;
     background: rgb(56, 56, 56);
     display: flex;
@@ -27,7 +28,7 @@ body{
 .outer-container{
     position: relative;
     width:100vw;
-    height:94vh;
+    height:94%;
     display: flex;
 }
 .slidebar{
