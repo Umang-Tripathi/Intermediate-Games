@@ -34,8 +34,8 @@ https://umang-tripathi.github.io/beginner-Games/breakout
 https://umang-tripathi.github.io/beginner-Games/maze/maze.html
 
 
-https://github.com/Umang-Tripathi/beginner-Games/PlatonicSolids/
+https://Umang-Tripathi.github.io/beginner-Games/PlatonicSolids/
 
 
-https://github.com/Umang-Tripathi/beginner-Games/fire/
+https://Umang-Tripathi.github.io/beginner-Games/fire/
 
