@@ -1,0 +1,166 @@
+#border{
+    position: absolute;
+    height:80vh;
+    width:80vw;
+    top:9vh;
+    left:9.5vw;
+    border:1vh solid;
+    border-color: brown;
+
+}
+#arena{
+    height:100vh;
+    width:100vW;
+    position:absolute;
+   
+    top:0px;
+    left:0px;
+    background-color: aqua;
+}
+#ground{
+    position: absolute;
+    top:10vh;
+    left:10vw;
+    height:80vh;
+    width:80vw;
+    
+    background-color: lightgreen;
+}
+#groundImg{
+    height:80vh;
+    width:80vw;
+}
+#audience{
+    position: absolute;
+    top:0vh;
+    left:0vw;
+    height:100vh;
+    width:100vw;
+
+}
+#goalpost1{
+    position: absolute;
+    top:40vh;
+    left:4.5vw;
+    height:20vh;
+    width:5vw;
+    border:1vh solid;
+    border-color: grey;
+
+  
+    background-color:rgba(100,100,100,0.5);
+
+}
+#goalpost2{
+    position: absolute;
+    top:40vh;
+    left:89.5vw;
+    height:20vh;
+    width:5vw;
+    border:1vh solid;
+    border-color: grey;
+    
+  
+    background-color:rgba(100,100,100,0.5);
+
+}
+#player1{
+    position:absolute;
+    height:4vh;
+    width:2vh;
+    border:2px solid;
+    border-color: black;
+    border-radius: 1vh;
+    background-color: blue;
+    top:38vh;
+    left:32vw;
+
+
+}
+#player2{
+    position:absolute;
+    height:4vh;
+    width:2vh;
+    border-radius: 1vh;
+    border:2px solid;
+    border-color: black;
+    background-color: red;
+    top:38vh;
+    left:46.2vw;
+    transform: rotate(180deg);
+
+
+}
+#head{
+    position:absolute;
+    height:2vh;
+    width:2vh;
+    top:1vh;
+    left:1vh;
+    
+    border-radius: 1vh;
+    background-color: palegoldenrod;
+}
+#ball{
+    position:absolute;
+    height:4vh;
+    width:4vh;
+    border-radius:2vh;
+    top:38vh;
+    left:39vw;
+    visibility: hidden;
+    background-color:orange;
+}
+#ballImg{
+    position:absolute;
+    height:4vh;
+    width:4vh;
+
+}
+#net{
+    position: absolute;
+    top:0vh;
+    left:0vw;
+    height:20vh;
+    width:5vw;
+    
+    
+    
+}
+#points2{
+    position: absolute;
+    top:0vh;
+    left:0vw;
+    height:20vh;
+    width:5vw;
+    text-align: center;
+    font-size: 40px;
+    color: rgba(100,100,100,0.5);
+
+}
+#points1{
+    position: absolute;
+    top:0vh;
+    left:0vw;
+    height:20vh;
+    width:5vw;
+    text-align: center;
+    font-size: 40px;
+    color: rgba(100,100,100,0.5);
+
+}
+#INSTRUCTION{
+    position: absolute;
+    top:20vh;
+    left :32vw;
+    font-size:40px;
+    visibility: visible;
+    color :rgb(255, 255, 255)
+    
+}
+#start{
+    position: absolute;
+    top:49vh;
+    left :48vw;
+    visibility: visible;
+}
