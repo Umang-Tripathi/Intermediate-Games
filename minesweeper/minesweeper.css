@@ -1,0 +1,84 @@
+#gameBody{
+    
+    position:absolute;
+    height:600px;
+    width:500px;
+    border:10px solid;
+    border-color: #9ca4a9;
+    border-radius: 20px;
+    top:100px;
+    left:400px;
+    background-color: rgb(193, 193, 193);
+    box-shadow: 20px 20px 20px 0 rgba(122, 122, 122, 0.2), -20px 20px 20px 0 rgba(122, 122, 122, 0.2),-20px -20px 20px 0 rgba(122, 122, 122, 0.2),20px -20px 20px 0 rgba(122, 122, 122, 0.2);
+    
+
+}
+#flags{
+    position:absolute;
+    height:50px;
+    width:100px;
+    background-Image:url('cell.png');
+    background-size:100px 50px;
+    box-shadow: 20px 20px 20px 0 rgba(122, 122, 122, 0.2), -20px 20px 20px 0 rgba(122, 122, 122, 0.2),-20px -20px 20px 0 rgba(122, 122, 122, 0.2),20px -20px 20px 0 rgba(122, 122, 122, 0.2);
+    top:50px;
+    left:50px;
+    
+    
+
+}
+#numberOfFlaged{
+    position:absolute;
+    top:-40px;
+    left:20px;
+    color:rgb(78, 78, 78);
+    font-size: 40px;
+    text-align: center;
+
+}
+#timer{
+    position:absolute;
+    height:50px;
+    width:100px;
+    background-Image:url('cell.png');
+    background-size:100px 50px;
+    box-shadow: 20px 20px 20px 0 rgba(122, 122, 122, 0.2), -20px 20px 20px 0 rgba(122, 122, 122, 0.2),-20px -20px 20px 0 rgba(122, 122, 122, 0.2),20px -20px 20px 0 rgba(122, 122, 122, 0.2);
+    top:50px;
+    left:350px;
+}
+#grid{
+    position:absolute;
+    height:400px;
+    width:400px;
+    box-shadow: 20px 20px 20px 0 rgba(122, 122, 122, 0.2), -20px 20px 20px 0 rgba(122, 122, 122, 0.2),-20px -20px 20px 0 rgba(122, 122, 122, 0.2),20px -20px 20px 0 rgba(122, 122, 122, 0.2);
+    top:150px;
+    left:50px;
+
+}
+#game{
+    position:absolute;
+    height:400px;
+    width:400px;
+    box-shadow: 20px 20px 20px 0 rgba(122, 122, 122, 0.2), -20px 20px 20px 0 rgba(122, 122, 122, 0.2),-20px -20px 20px 0 rgba(122, 122, 122, 0.2),20px -20px 20px 0 rgba(122, 122, 122, 0.2);
+    top:150px;
+    left:50px;
+}
+#time{
+    position:absolute;
+    top:-40px;
+    left:20px;
+    font-size: 40px;
+    color:rgb(78, 78, 78);
+    text-align: center;
+
+}
+#reset{
+    position:absolute;
+    height:40px;
+    width:40px;
+    top:50px;
+    left:230px;
+    box-shadow: 20px 20px 20px 0 rgba(122, 122, 122, 0.2), -20px 20px 20px 0 rgba(122, 122, 122, 0.2),-20px -20px 20px 0 rgba(122, 122, 122, 0.2),20px -20px 20px 0 rgba(122, 122, 122, 0.2);
+    background-image: url("normal.png");
+    background-size:40px 40px;
+
+}
