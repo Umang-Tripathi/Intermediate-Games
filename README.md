@@ -41,3 +41,6 @@ https://Umang-Tripathi.github.io/beginner-Games/fire/fire.html
 
 
 https://Umang-Tripathi.github.io/beginner-Games/football/football.html
+
+
+https://Umang-Tripathi.github.io/beginner-Games/minesweeper/minesweeper.html
