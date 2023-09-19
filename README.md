@@ -3,7 +3,6 @@ This is my attempt to make the OG games using javascript, HTML and CSS.
 ⭐️⭐️⭐️ [Platonic Solids](
 https://Umang-Tripathi.github.io/Intermediate-Games/PlatonicSolids/PlatonicSolids.html)
 
-
 ⭐️⭐️⭐️ [maze](
 https://umang-tripathi.github.io/Intermediate-Games/maze/maze.html)
 
