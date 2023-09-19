@@ -1,7 +1,7 @@
 This is my attempt to make the OG games using javascript, HTML and CSS.
 
-⭐️⭐️⭐️
- https://Umang-Tripathi.github.io/beginner-Games/PlatonicSolids/PlatonicSolids.html
+⭐️⭐️⭐️ [Platonic Solids](https://Umang-Tripathi.github.io/beginner-Games/PlatonicSolids/PlatonicSolids.html)
+
 
 ⭐️⭐️⭐️
  https://umang-tripathi.github.io/beginner-Games/maze/maze.html
