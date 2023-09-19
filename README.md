@@ -13,6 +13,9 @@ https://Umang-Tripathi.github.io/Intermediate-Games/minesweeper/minesweeper.html
 ⭐️⭐️⭐️[Tetris](
 https://umang-tripathi.github.io/Intermediate-Games/tetris)
 
+⭐️⭐️⭐️[Chad Cat](
+https://umang-tripathi.github.io/Intermediate-Games/chad_cat)
+
 ⭐️⭐️⭐️[Breakout](
 https://umang-tripathi.github.io/Intermediate-Games/breakout)
 
@@ -21,9 +24,6 @@ https://umang-tripathi.github.io/Intermediate-Games/snake)
 
 ⭐️⭐️⭐️[Fire simulation](
 https://Umang-Tripathi.github.io/Intermediate-Games/fire/fire.html)
-
-⭐️⭐️[Chad Cat](
-https://umang-tripathi.github.io/Intermediate-Games/chad_cat)
 
 ⭐️⭐️[2048](
 https://umang-tripathi.github.io/Intermediate-Games/2048)
